@@ -48,6 +48,8 @@ class image
             $img .= 'src="'.$this->image['url'].'" ';
             $img .= 'alt="'.$this->image['alt'].'" ';
             $img .= 'title="'.$this->image['title'].'" ';
+            $img .= 'width="'.$this->image['width'].'" ';
+            $img .= 'height="'.$this->image['height'].'" ';
             $img .= '/>';
         $img .= '</picture>';
 
