@@ -30,7 +30,9 @@ class svg
 
     public function run()
     {
-        $this->result = str_replace('#FFFFFF', $this->luminance, $this->svg);
+        $this->result = '<div class="vector">';
+        $this->result .= str_replace('#FFFFFF', $this->luminance, $this->svg);
+        $this->result .= '</div>';
     }
 
 }

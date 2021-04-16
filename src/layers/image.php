@@ -42,16 +42,18 @@ class image
 
     private function build_image()
     {
-        $img = '<picture>';
-            $img .= '<img ';
-            $img .= 'class="'.$this->global.' '.$this->class.'" ';
-            $img .= 'src="'.$this->image['url'].'" ';
-            $img .= 'alt="'.$this->image['alt'].'" ';
-            $img .= 'title="'.$this->image['title'].'" ';
-            $img .= 'width="'.$this->image['width'].'" ';
-            $img .= 'height="'.$this->image['height'].'" ';
-            $img .= '/>';
-        $img .= '</picture>';
+        $img = '<div class="bitmap">';
+            $img .= '<picture>';
+                $img .= '<img ';
+                $img .= 'class="'.$this->global.' '.$this->class.'" ';
+                $img .= 'src="'.$this->image['url'].'" ';
+                $img .= 'alt="'.$this->image['alt'].'" ';
+                $img .= 'title="'.$this->image['title'].'" ';
+                $img .= 'width="'.$this->image['width'].'" ';
+                $img .= 'height="'.$this->image['height'].'" ';
+                $img .= '/>';
+            $img .= '</picture>';
+        $img .= '</div>';
 
         $this->result = $img;
     }
