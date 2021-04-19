@@ -58,11 +58,18 @@ class html
         
         foreach($this->html as $this->html_key => $this->html_instance)
         {
+            $this->remove_text_bug();
             $this->replace_moustaches();
             $this->array_to_string();
         }
 
 
+    }
+
+
+    private function remove_text_bug()
+    {
+        $this->text_luminance_class_inv = str_replace('text-', '', $this->text_luminance_class_inv);
     }
 
 
