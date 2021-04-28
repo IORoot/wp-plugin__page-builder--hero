@@ -47,7 +47,7 @@ class image
                 $img .= '<img ';
                 $img .= 'class="'.$this->global.' '.$this->class.'" ';
                 $img .= 'src="'.$this->image['url'].'" ';
-                $img .= 'alt="'.$this->image['alt'].'" ';
+                $img .= 'alt="Hero Image" ';
                 $img .= 'title="'.$this->image['title'].'" ';
                 $img .= 'width="'.$this->image['width'].'" ';
                 $img .= 'height="'.$this->image['height'].'" ';
